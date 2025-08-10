@@ -10,14 +10,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      // home: Scaffold(
-      //   body: Center(
-      //     child: Text('Hello World!'),
-      //   ),
-      // ),
-      title: 'Two Pages Example',
-      home: Page1(),
-    );
+    return MaterialApp(title: 'Two Pages Example', home: Page1());
   }
 }
