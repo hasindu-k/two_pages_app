@@ -1,6 +1,5 @@
 // page1.dart
 import 'package:flutter/material.dart';
-import 'page2.dart';
 
 class Page1 extends StatelessWidget {
   @override
@@ -11,10 +10,7 @@ class Page1 extends StatelessWidget {
         child: ElevatedButton(
           onPressed: () {
             // Navigate to Page 2
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => Page2()),
-            );
+            Navigator.pushNamed(context, '/page2');
           },
           child: Text('Go to Page 2'),
         ),
